@@ -13,7 +13,7 @@ Customer::Customer(){
   numMovies = 0;
 }
 
-Customer::Customer(int i, int c, string n, int exp, int k, int nm){
+Customer::Customer(int i, long long int c, string n, int exp, int k, int nm){
   id = i;
   creditCard = c;
   name = n;
@@ -23,14 +23,14 @@ Customer::Customer(int i, int c, string n, int exp, int k, int nm){
 }
 
 int Customer::GetID(){ return id; }
-int Customer::GetCC(){ return creditCard; }
+long long int Customer::GetCC(){ return creditCard; }
 string Customer::GetName(){ return name; }
 int Customer::GetExpiration(){ return expirationDate; }
 int Customer::GetKey(){ return key; }
 int Customer::GetNumMovies(){ return numMovies; }
 
 void Customer::SetID(int i){ id = i; }
-void Customer::SetCC(int c){ creditCard = c; }
+void Customer::SetCC(long long int c){ creditCard = c; }
 void Customer::SetName(string n){ name = n; }
 void Customer::SetExpiration(int e){ expirationDate = e; }
 void Customer::SetKey(int k){ key = k; }

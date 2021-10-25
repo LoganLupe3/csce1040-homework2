@@ -6,7 +6,7 @@ using namespace std;
 class Customer{
   private:
     int id;
-    int creditCard;
+    long long int creditCard;
     string name;
     int expirationDate;
     int key;
@@ -14,11 +14,11 @@ class Customer{
 
   public:
     Customer();
-    Customer(int id, int cc, string n, int exp, int k, int nm);
+    Customer(int id, long long int cc, string n, int exp, int k, int nm);
 
     // Accessor
     int GetID();
-    int GetCC();
+    long long int GetCC();
     string GetName();
     int GetExpiration();
     int GetKey();
@@ -26,7 +26,7 @@ class Customer{
 
     // Mutators
     void SetID(int i);
-    void SetCC(int c);
+    void SetCC(long long int c);
     void SetName(string n);
     void SetExpiration(int e);
     void SetKey(int k);
