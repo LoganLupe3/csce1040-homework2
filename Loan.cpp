@@ -7,7 +7,7 @@ Loan::Loan(){
   id = 0;
   movieID = 0;
   custID = 0;
-  dueDate = 0;
+  dueDate = 0; // Split into day, month, year
   dueTime = 0;
   status = Out;
 }
@@ -21,6 +21,8 @@ Loan::Loan(int i, int m, int c, int d, int time, Status s){
   status  = s;
 }
 
+// Delete GetDueDate()
+// Add GetDay(), GetMonth(), GetYear()
 int Loan::GetID(){ return id; }
 int Loan::GetMovieID(){ return movieID; }
 int Loan::GetCustID(){ return custID; }
@@ -28,6 +30,8 @@ int Loan::GetDueDate(){ return dueDate; }
 int Loan::GetDueTime(){ return dueTime; }
 Status Loan::GetStatus(){ return status; }
 
+// Delete SetDueDate(int)
+// Add SetDay(int), SetMonth(int), SetYear(int)
 void Loan::SetID(int i){ id = i; }
 void Loan::SetMovieID(int i){ movieID = i; }
 void Loan::SetCustID(int i){ custID = i; }
