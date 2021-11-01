@@ -7,7 +7,7 @@ using namespace std;
 Movie::Movie(){
   id = 0;
   title = "";
-  releaseDate = 0;
+  releaseDate = 0; // Split into day, month, year
   rating = "";
   duration = 0;
   rentalCost = 0.0;
@@ -24,6 +24,8 @@ Movie::Movie(int i, string t, int date, string r, int d, double rental, double r
   replacementCost = replace;
 }
 
+// Modify GetReleaseDate() to format day, month, and year into mm/dd/yyyy
+// Add GetDay(), GetMonth(), GetYear()
 int Movie::GetID(){ return id; }
 string Movie::GetTitle(){ return title; }
 int Movie::GetReleaseDate(){ return releaseDate; }
