@@ -21,7 +21,7 @@ Loan::Loan(int i, int m, int c, int d, int time, Status s){
   status  = s;
 }
 
-// Delete GetDueDate()
+// Modify GetDueDate() to combine and format day, month, and year into mm/dd/yyyy
 // Add GetDay(), GetMonth(), GetYear()
 int Loan::GetID(){ return id; }
 int Loan::GetMovieID(){ return movieID; }
